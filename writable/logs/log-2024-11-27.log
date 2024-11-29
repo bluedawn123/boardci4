@@ -1,0 +1,35 @@
+CRITICAL - 2024-11-27 03:47:32 --> Error: Call to undefined function App\Controllers\render()
+[Method: GET, Route: board]
+in APPPATH\Controllers\Board.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('E:\\KDT\\CI4_BOARD\\public\\index.php')
+CRITICAL - 2024-11-27 03:51:18 --> ParseError: Unmatched '}'
+[Method: CLI, Route: serve]
+in APPPATH\Config\Events.php on line 46.
+ 1 SYSTEMPATH\Events\Events.php(147): CodeIgniter\Events\Events::initialize()
+ 2 SYSTEMPATH\CLI\Commands.php(68): CodeIgniter\Events\Events::trigger('pre_command')
+ 3 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('serve', [])
+ 4 SYSTEMPATH\Boot.php(351): CodeIgniter\CLI\Console->run()
+ 5 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 6 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-11-27 04:18:48 --> ErrorException: Undefined variable $data
+[Method: GET, Route: board]
+in APPPATH\Views\board_list.php on line 2.
+ 1 APPPATH\Views\board_list.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'E:\\KDT\\CI4_BOARD\\app\\Views\\board_list.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\KDT\\CI4_BOARD\\app\\Views\\board_list.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('board_list', [], true)
+ 5 APPPATH\Helpers\render_helper.php(8): view('board_list', [...], [])
+ 6 APPPATH\Controllers\Board.php(15): render('board_list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\KDT\\CI4_BOARD\\public\\index.php')
